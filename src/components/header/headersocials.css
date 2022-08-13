@@ -1,0 +1,88 @@
+
+.header_socials div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    column-gap: 2.5rem;
+    animation: animation-header_socials;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes animation-header_socials{
+    0%   {padding-bottom: 80px; opacity: 0; filter: blur(10px);}
+    100% {padding-bottom: 0px; opacity: 1; filter: blur(0px);}
+}
+
+.header_socials > div > a{
+    filter: blur(1px);
+}
+
+.header_socials > div:hover > a{
+    /* color: var(--color-primary); */
+    /* background: var(--color-bg-variant); */
+    transform: scale(2);
+    transition: var(--transition);
+    box-shadow: 0px 0px 8px rgba(255,255,255,0.2);
+    filter: blur(0px);
+}
+
+.header_socials > div:hover > h5{
+    opacity: 1;
+    pointer-events: auto;
+    left: 70px;
+}
+
+/* ================== TOOL-TIP ==================== */
+.header_socials div h5{
+    position: absolute;
+    padding: 10px 18px;
+    left: 0px;
+    background: var(--color-bg-variant);
+    border-radius: 10px;
+    box-shadow: 4px 5px 8px rgba(255,255,255,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-cubicbezier);
+    text-align: center;
+    text-overflow: ellipsis;
+}
+.header_socials div h5::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    margin-left: -18px;
+    margin-top: 2.5px;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--color-bg-variant);
+}
+
+/* ================== ICONS ==================== */
+.instagram-icon{
+    height: 30px;
+    width: 30px;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    background: linear-gradient(to top right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border-radius: 50%;
+    padding-top: 2.5px;
+}
+
+.linkedin-icon{
+    height: 30px;
+    width: 30px;
+    color: #0077B5;
+    background: var(--color-white);
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+.tiktok-icon{
+    height: 30px;
+    width: 30px;
+    color: rgb(0,0,0);
+    background: var(--color-white);
+    border-radius: 30%;
+    padding-top: 5px;
+}

@@ -1,0 +1,141 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 15%;
+
+}
+
+.about_me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 10%;
+    border-radius: 2rem;
+    background: linear-gradient(30deg, transparent, var(--color-primary) 90%, transparent);
+    display: grid;
+    place-items: center;
+    filter: contrast(120%);
+}
+
+.about_me_animation{
+    animation: var(--animation-fade_in-left);
+}
+
+.stat_graph{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.attribute > h5{
+    position: relative;
+    top: 0.5rem;
+}
+
+.about_me-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+    filter: grayscale(100%) blur(5px);
+    position: absolute;
+}
+
+.about_me-image img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%) blur(10px);
+    transition: var(--transition);
+}
+
+.about_me > h3,
+.about_me > h5{
+    position: relative;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    font-style: italic;
+}
+.about_me > h3{
+    top: 4rem;
+    font-size: 2rem;
+}
+.about_me > h5{
+    bottom: 4rem;
+    font-size: 0.9rem;
+}
+
+.about_me:hover > .about_me-image,
+.about_me:hover > .about_me-image img{
+    transform: rotate(0);
+    filter: grayscale(0%) blur(0);
+}
+
+.about_me:hover > h3,
+.about_me:hover > h5{
+    font-size: 0;
+    background: transparent;
+}
+
+.about_icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_content p{
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+.about_content_p_animation{
+    animation: var(--animation-fade_in-right);
+}
+
+.contact_btn{
+    text-align: center;
+}
+
+/* ===================== Media Queries (Medium Devices) ======================== */
+@media screen and (max-width: 1024px) {
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about_me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about_content p{
+        margin: 1rem 0 1.5rem;
+    }
+
+    .about_me > h3{
+        top: 0rem;
+        font-size: 2rem;
+    }
+    .about_me > h5{
+        display: none;
+    }
+}
+
+/* ===================== Media Queries (Small Devices) ======================== */
+@media screen and (max-width: 600px) {
+    .about_me{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about_content{
+       text-align: center;
+       margin: 1.5rem;
+    }
+    
+    .about_content p{
+        margin: 1.5rem 0;
+    }
+}

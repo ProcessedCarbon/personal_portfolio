@@ -1,0 +1,53 @@
+.skill{
+    height: 160px;
+    width: 160px;
+    position: relative;
+}
+.outer{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    border: 2px solid var(--color-primary-variant);
+	/* box-shadow: 8px 6px 8px 4px rgba(0,0,0,0.1), 
+                3px 6px 10px 4px rgba(0,0,0,0.3); */
+    box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.3);
+}
+
+.inner{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    border: 1.5px var(--color-primary-variant);
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: inset;
+}
+.skill_name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.skill_name > h4{
+    font-weight: 500;
+}
+
+.circle-fill{
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-linejoin:round;
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    transition: var(--transition-bars);
+}
+.circle-svg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
