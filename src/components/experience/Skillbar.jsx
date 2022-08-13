@@ -1,6 +1,5 @@
 import React from 'react'
 import './skillbar.css'
-{/*Conversion of bar is done by taking (472 - (472*%))*/}
 const Skillbar = ({skillname, skilllevel, skillvalue}) => {
   let sillPercent = (100-skillvalue) * 4.4
   return (

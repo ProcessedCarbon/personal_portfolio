@@ -27,28 +27,28 @@ const Contact = () => {
           <HiOutlineMail className='contact_option-icons'/>
           <h4>Email</h4>
           <h5>gregorywng6@gmail.com</h5>
-          <a href="mailto:gregorywng6@gmail.com" target="_blank">Email Me</a>
+          <a href="mailto:gregorywng6@gmail.com" target="_blank" rel="noreferrer">Email Me</a>
          </article>
 
          <article className='contact_option'>
           <AiOutlineInstagram className='contact_option-icons'/>
           <h4>Instagram</h4>
           <h5>@gregory_w0ng</h5>
-          <a href="https://www.instagram.com/gregory_w0ng/" target="_blank">Drop a Follow!</a>
+          <a href="https://www.instagram.com/gregory_w0ng/" target="_blank" rel="noreferrer">Drop a Follow!</a>
          </article>
 
          <article className='contact_option'>
           <AiOutlineWhatsApp className='contact_option-icons'/>
           <h4>Whatsapp</h4>
           <h5>+65 8374 8871</h5>
-          <a href="https://wa.me/+6583748871" target="_blank">Whatsapp Me!</a>
+          <a href="https://wa.me/+6583748871" target="_blank" rel="noreferrer">Whatsapp Me!</a>
          </article>
 
          <article className='contact_option'>
           <RiTelegramLine className='contact_option-icons'/>
           <h4>Telegram</h4> 
           <h5>@yrogerg_97</h5>
-          <a href="https://t.me/+6583748871" target="_blank">Telegram Me!</a>
+          <a href="https://t.me/+6583748871" target="_blank" rel="noreferrer">Telegram Me!</a>
          </article>
         </div>
 

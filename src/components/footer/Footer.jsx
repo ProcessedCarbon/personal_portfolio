@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import {AiOutlineInstagram} from 'react-icons/ai'
-import {FaTiktok} from 'react-icons/fa'
+// import {FaTiktok} from 'react-icons/fa'
 import {BsLinkedin} from 'react-icons/bs'
 
 

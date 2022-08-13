@@ -26,7 +26,7 @@ const About = () => {
       <div className='container about_container' ref={about_me_ref}  >
         <div className = {`about_me about_me_animation intro ${`${about_me_visible}` === "true" ? " play" : ""}`}>
           <div className="about_me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} />
           </div>
           <h3>I'm shy....</h3>
           <h5>Hover over to see me</h5>
