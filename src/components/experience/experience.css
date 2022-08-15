@@ -165,8 +165,8 @@
 .experience_content-programs .experience_details{
     display: flex;
     gap: 1rem;
-    margin: 2rem;
-    scroll-snap-align: center;
+    padding: 1rem 2rem;
+    scroll-snap-align: start;
 }
 .experience_content-coding .experience_details p{
     text-align: center;

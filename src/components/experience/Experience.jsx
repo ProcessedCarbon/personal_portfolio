@@ -141,6 +141,14 @@ const Experience = () => {
               </div>
             </article>
 
+            <article className="experience_details">
+              <BsFileEarmarkCheckFill className='experience_details-icons'/>
+              <div>
+                <h4>3DSMax</h4>
+                <small className='text-light'>Basic</small>
+              </div>
+            </article>
+
           </div>
         </div>
         {/*EXPERIENCE_PROGRAMS_END*/}
