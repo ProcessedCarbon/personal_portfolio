@@ -38,9 +38,9 @@ const Experience = () => {
             <div className="shown">
               {/* REACT */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='REACT' skilllevel='Basic' skillvalue={`${elementVisibility}` === 'true' ? '20' : '0'}/>
+                <Skillbar className='skill-bar' skillname='C' skilllevel='Basic' skillvalue={`${elementVisibility}` === 'true' ? '20' : '0'}/>
                 <p className='text-light'>
-                  Still currently a beginner. Most of my experience on this is here.
+                  Still currently a beginner.
                 </p>
               </article>
 
