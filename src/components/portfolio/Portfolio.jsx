@@ -39,7 +39,7 @@ const Portfolio = () => {
                     <div className="description_group">
                       <i><RiCheckboxMultipleLine/></i>
                       <div>
-                        <h4>First 'actual' game made</h4>
+                        <h4>First game made</h4>
                         <small className='text-light'>Created in 2015.</small>
                       </div>
                     </div>
@@ -49,14 +49,6 @@ const Portfolio = () => {
                       <div>
                         <h4>Team of 5</h4>
                         <small className='text-light'>1 Programmers, 1 Designer, 3 Artist.</small>
-                      </div>
-                    </div>
-
-                    <div className='description_group'>
-                      <i><RiCheckboxMultipleLine/></i>
-                      <div>
-                        <h4>Made using Adobe Flash</h4>
-                        <small className='text-light'></small>
                       </div>
                     </div>
 
@@ -104,14 +96,6 @@ const Portfolio = () => {
                       <div>
                         <h4>Poly Final Year Project</h4>
                         <small className='text-light'>1 year worth of work.</small>
-                      </div>
-                    </div>
-
-                    <div className='description_group'>
-                      <i><RiCheckboxMultipleLine/></i>
-                      <div>
-                        <h4>Larger Team</h4>
-                        <small className='text-light'>Team of 7.</small>
                       </div>
                     </div>
 

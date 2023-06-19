@@ -59,12 +59,12 @@
     font-style: italic;
 }
 .about_me > h3{
-    top: 4rem;
-    font-size: 2rem;
+    top: 6dvh;
+    font-size: 2.5dvw;
 }
 .about_me > h5{
-    bottom: 4rem;
-    font-size: 0.9rem;
+    bottom: 6dvh;
+    font-size: 1dvw;
 }
 
 .about_me:hover > .about_me-image,
@@ -88,6 +88,7 @@
 .about_content p{
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+    font-size: 1.2dvw;
 }
 
 .about_content_p_animation{

@@ -7,6 +7,8 @@
     flex-direction: column;
     border-radius: 30px;
     border: 2px solid var(--color-primary-variant);
+    width: 80dvw;
+    height: 90dvh;
 }
 
 .portfolio_container_animation{
@@ -17,13 +19,15 @@
     display: flex;
     grid-template-columns: row;
     align-items: baseline;
-    column-gap: 5rem;
+    column-gap: 3dvw;
     align-items: center;
     overflow-x: scroll;
     overflow-y: hidden;
     overscroll-behavior-inline: contain;
     scroll-snap-type: x mandatory;
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
+    height: 90dvh;
+    cursor: default;
 }
 .portfolio_items::-webkit-scrollbar{
     display: visible;
@@ -47,6 +51,8 @@
     border: 4px var(--color-primary-variant);
     border-style: outset;
     transform: scale(0.97);
+    height: 80dvh;
+    width: 73dvw;
 }
 
 .scroll-desp{
@@ -59,6 +65,7 @@
     justify-content: end;
     align-items: center;
     column-gap: 0.5rem;
+    cursor: default;
 }
 
 .scroll-desp.content{
@@ -75,10 +82,16 @@
     border-color: var(--color-primary-variant-light);
 }
 
+
 .portfolio_item h2{
     font-size: 2rem;
     font-weight: 500;
     text-shadow: 3px 3px var(--color-primary-variant);
+}
+
+.video_wrapper{
+    height: 60dvh;
+    width: 45dvw;
 }
 
 .portfolio_video{
@@ -86,8 +99,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
-    height: 500px;
-    width: 1000px;
     justify-content: center;
     align-items: center;
     place-items: center;
@@ -96,8 +107,8 @@
 .portfolio_video-description{
     border: 5px solid var(--color-primary-variant);
     border-radius: 1.5rem;
-    height: 100%;
-    width: 100%;
+    height: 60dvh;
+    width: 20dvw;
     padding: 2rem;
     overflow: auto;
     transition: var(--transition-cubicbezier);
@@ -106,17 +117,19 @@
     box-shadow: inset 4px 4px 6px 5px rgba(0, 0, 0, 0.3),
                 inset -4px -4px 8px 1px rgba(255, 255, 255, 0.2);
 }
+.portfolio_video-description::-webkit-scrollbar{
+    display: none;
+}
 
 .portfolio_video-description .shown{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    right: 2.5%;
+    row-gap: 0.75rem;
     filter: blur(0px);
-    width: 280px;
     transition: var(--transition);
     padding: 0.5rem;
     position: relative;
+    font-size: 1vw;
 } 
 
 .portfolio_video-description .hidden{
@@ -136,7 +149,7 @@
     visibility: visible;
     filter: blur(0px);
     left: 0rem;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 .portfolio_video-description:hover .shown{

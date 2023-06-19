@@ -1,7 +1,7 @@
 .skill{
-    height: 160px;
-    width: 160px;
+    height: 20dvh;
     position: relative;
+    aspect-ratio: 1 / 1;
 }
 .outer{
     height: 100%;
@@ -9,8 +9,6 @@
     border-radius: 50%;
     background: rgba(0,0,0,0.3);
     border: 2px solid var(--color-primary-variant);
-	/* box-shadow: 8px 6px 8px 4px rgba(0,0,0,0.1), 
-                3px 6px 10px 4px rgba(0,0,0,0.3); */
     box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.3);
 }
 
@@ -50,4 +48,6 @@
     position: absolute;
     top: 0;
     bottom: 0;
+    height: 20vh;
+    aspect-ratio: 1/ 1;
 }

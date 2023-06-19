@@ -24,7 +24,7 @@
 .transition-group > h5{
     transition: 1.2s ease;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1vw;
 }
 
 .transition-group > h5::before{
@@ -34,31 +34,31 @@
     content: ' Summary!';
 }
 .experience_coding:hover > .transition-group h5{
-    /* padding-left: 45rem; */
-    padding-left: 80.5%;
+    padding-left: 83%;
+    align-content: flex-end;
     color: var(--color-bg);
 }
 .experience_coding:hover > .transition-group h5::before{
     content: 'Release ';
 }
 .experience_coding:hover > .transition-group h5::after{
-    content: ' Skill-Bars!';
+    content: ' Skills';
 }
 
 .transition-line{
     background: var(--color-primary-variant-light);
-    height: 5px;
-    width: 100px;
-    left: 0rem;
+    height: 0.75dvh;
+    width: 8dvw;
+    left: 0;
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    border-radius: 50px;
+    margin-top: 1dvh;
+    margin-bottom: 3dvh;
+    border-radius: 5dvw;
     transition: 1.5s ease;
 }
 .experience_coding:hover > .transition-group .transition-line{
-    /* left: 49rem; */
-    left: 89%;
+    left: 87%;
+    align-content: flex-end;
     background: var(--color-bg-variant);
 }
 
@@ -84,20 +84,20 @@
 }
 
 .experience_content-coding{
-    height: 350px;
-    overflow: hidden;
-    /* background: red; */
+    height: 43dvh;
+    overflow: scroll;
+    cursor: default;
 }
 
 .experience_content-coding .shown{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
     place-items: center;
     align-items: baseline;
     position: relative;
     top: 0%;
-    gap: 3rem;
+    gap: 3vw;
     opacity: 1;
     transition: 1s ease-in-out;
 }
@@ -115,6 +115,9 @@
     transition: 1s ease-in-out;
     filter: blur(5px);
 } 
+.experience_content-coding::-webkit-scrollbar{
+    display: none;
+}
 .experience_coding:hover .shown{
     top: -130%;
     opacity: 0;
@@ -156,6 +159,7 @@
     backdrop-filter: blur(10px);
     border-style: outset;
     box-shadow: 2px 2px 10px 8px rgba(0,0,0,0.2);
+    cursor: default;
 }
 
 .experience_content-programs::-webkit-scrollbar{
@@ -179,6 +183,17 @@
 }
 
 /* ===================== Media Queries (Medium Devices) ======================== */
+@media screen and (max-width: 1350px) {
+    .experience_content-coding{
+        height: 70dvh;
+    }
+    .experience_content-coding .shown{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .experience_container{
         grid-template-columns: 1fr;
@@ -198,13 +213,6 @@
         justify-content: center;
         place-items: center;
         text-align: start;
-    }
-    .experience_content-coding{
-        height: 700px;
-    }
-    .experience_content-coding .shown{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
     .transition-group{
         display: none;
@@ -235,7 +243,6 @@
     }
     .experience_coding{
         height: 800px;
-
     }
     .experience_content-coding .shown{
         gap: 1rem;

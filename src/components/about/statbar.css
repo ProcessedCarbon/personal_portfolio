@@ -29,6 +29,7 @@
 	opacity: 0;
 	overflow: hidden;
 	transition: var(--transition-bars);
+	cursor: default;
 }
 
 .stat-bar h5{
@@ -41,12 +42,9 @@
 	opacity: 0;
 	color: var(--color-primary-variant-light);
 }
-.stat:hover{
-	transform: scale(1.3);
-	cursor: default;
-}
+
 .stat:hover > .stat-bar{
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 .stat:hover > .stat-bar h5{
 	display: flex;
