@@ -11,19 +11,19 @@ export const ThemeContext = React.createContext()
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#');
   useEffect(() => {
-    // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    console.log(window.scrollY)
     if(window.innerWidth <= 1024 && window.innerWidth > 600){     
       {/* Tablet support */}
-      if(window.pageYOffset >= 660 && window.pageYOffset < 1938){
+      if(window.scrollY >= 660 && window.scrollY < 1938){
         setActiveNav('#about');
       }
-      else if(window.pageYOffset >= 1938 && window.pageYOffset < 3106){
+      else if(window.scrollY >= 1938 && window.scrollY < 3106){
         setActiveNav('#experience');
       }
-      else if(window.pageYOffset >= 3106 && window.pageYOffset < 5990){
+      else if(window.scrollY >= 3106 && window.scrollY < 4190){
         setActiveNav('#portfolio');
       }
-      else if(window.pageYOffset >= 5990){
+      else if(window.scrollY >= 4190){
         setActiveNav('#contact');
       }    
       else{
@@ -32,16 +32,16 @@ const Nav = () => {
     }
     else if(window.innerWidth <= 600){
       {/* Tablet support */}
-      if(window.pageYOffset >= 680 && window.pageYOffset < 2075){
+      if(window.scrollY >= 680 && window.scrollY < 2075){
         setActiveNav('#about');
       }
-      else if(window.pageYOffset >= 2075 && window.pageYOffset < 3117){
+      else if(window.scrollY >= 2075 && window.scrollY < 3117){
         setActiveNav('#experience');
       }
-      else if(window.pageYOffset >= 3117 && window.pageYOffset < 5407){
+      else if(window.scrollY >= 3117 && window.scrollY < 4507){
         setActiveNav('#portfolio');
       }
-      else if(window.pageYOffset >= 5407){
+      else if(window.scrollY >= 4507){
         setActiveNav('#contact');
       }    
       else{
@@ -49,23 +49,23 @@ const Nav = () => {
       }
     }
     else{
-      if(window.pageYOffset >= 550 && window.pageYOffset < 1480){
+      if(window.scrollY >= 550 && window.scrollY < 1480){
         setActiveNav('#about');
       }
-      else if(window.pageYOffset >= 1480 && window.pageYOffset < 2262){
+      else if(window.scrollY >= 1480 && window.scrollY < 2262){
         setActiveNav('#experience');
       }
-      else if(window.pageYOffset >= 2262 && window.pageYOffset < 3900){
+      else if(window.scrollY >= 2262 && window.scrollY < 3000){
         setActiveNav('#portfolio');
       }
-      else if(window.pageYOffset >= 3900){
+      else if(window.scrollY >= 3000){
         setActiveNav('#contact');
       }    
       else{
         setActiveNav('#');
       }
     }
-  }, [window.pageYOffset])
+  }, [window.scrollY])
   
   return (
     <nav>

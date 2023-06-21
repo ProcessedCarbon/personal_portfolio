@@ -71,10 +71,6 @@ const About = () => {
         </div>
       </div>
 
-      <div className='contact_btn'>
-        <a href="#contact" className="btn btn-primary">Let's Talk</a>
-      </div>
-
     </section>
   )
 }
