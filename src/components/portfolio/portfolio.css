@@ -143,6 +143,7 @@
     left: 20rem;
     transition: var(--transition);
     font-size: 0;
+    overflow: hidden;
     font-weight: 100;
 }
 
@@ -151,9 +152,6 @@
     filter: blur(0px);
     left: 0rem;
     font-size: 1vw;
-}
-.portfolio_video-description .hidden,
-.portfolio_video-description:hover .hidden{
     overflow: hidden;
 }
 
