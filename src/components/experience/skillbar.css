@@ -49,5 +49,6 @@
     top: 0;
     bottom: 0;
     height: 20vh;
+    transform: rotate(-90deg);
     aspect-ratio: 1/ 1;
 }

@@ -148,7 +148,7 @@
     justify-content: start;
     place-items: center;
     text-align: center;
-    gap: 5rem;
+    gap: 6dvw;
     overflow: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: x mandatory;

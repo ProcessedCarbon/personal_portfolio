@@ -38,7 +38,7 @@ const Experience = () => {
             <div className="shown">
               {/* REACT */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='C' skilllevel='Basic' skillvalue={`${elementVisibility}` === 'true' ? '20' : '0'}/>
+                <Skillbar className='skill-bar' skillname='Go' skilllevel='Basic' skillvalue={`${elementVisibility}` === 'true' ? '20' : '0'}/>
                 <p className='text-light'>
                   Still currently a beginner.
                 </p>
@@ -54,7 +54,7 @@ const Experience = () => {
 
               {/* Java */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='Java' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '40' : '0'}/>
+                <Skillbar className='skill-bar' skillname='Lua' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '50' : '0'}/>
                 <p className='text-light'>
                   Did a single project and a few assessments.
                 </p>
@@ -62,7 +62,7 @@ const Experience = () => {
 
               {/* Python */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='Python' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '50' : '0'}/>
+                <Skillbar className='skill-bar' skillname='Python' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '45' : '0'}/>
                 <p className='text-light'>
                   Fairly confident in this language.
                 </p>
@@ -104,22 +104,6 @@ const Experience = () => {
             <article className="experience_details">
               <BsFileEarmarkCheckFill className='experience_details-icons'/>
               <div>
-                <h4>YOLOv5</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsFileEarmarkCheckFill className='experience_details-icons'/>
-              <div>
-                <h4>TensorFlow</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsFileEarmarkCheckFill className='experience_details-icons'/>
-              <div>
                 <h4>React</h4>
                 <small className='text-light'>Basic</small>
               </div>
@@ -136,7 +120,7 @@ const Experience = () => {
             <article className="experience_details">
               <BsFileEarmarkCheckFill className='experience_details-icons'/>
               <div>
-                <h4>Photoshop</h4>
+                <h4>JIRA</h4>
                 <small className='text-light'>Basic</small>
               </div>
             </article>
@@ -144,7 +128,15 @@ const Experience = () => {
             <article className="experience_details">
               <BsFileEarmarkCheckFill className='experience_details-icons'/>
               <div>
-                <h4>3DSMax</h4>
+                <h4>Confluence</h4>
+                <small className='text-light'>Basic</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsFileEarmarkCheckFill className='experience_details-icons'/>
+              <div>
+                <h4>Gitlab</h4>
                 <small className='text-light'>Basic</small>
               </div>
             </article>
