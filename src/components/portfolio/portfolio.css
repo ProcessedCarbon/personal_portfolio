@@ -154,7 +154,7 @@
     font-size: 1vw;
     overflow: scroll;
 }
-
+.portfolio_video-description .hidden::-webkit-scrollbar,
 .portfolio_video-description:hover .hidden::-webkit-scrollbar{
     display: hidden;
 }
