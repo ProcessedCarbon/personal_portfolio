@@ -28,45 +28,45 @@ const About = () => {
           <div className="about_me-image">
             <img src={ME} />
           </div>
-          <h3>I'm shy....</h3>
-          <h5>Hover over to see me</h5>
+          <h3>Hover over to see me</h3>
         </div>
 
         <div className="about_content">
           <div className='stat_graph' ref={stat_ref}>
             
             <article className="attribute">
-              <h5>INTELLIGENCE</h5>
-              <StatBar done = {`${elementVisibility}` === 'true' ? '40' : '0'} text='Not the brightest.'/>
+              <h5>EAGERNESS TO LEARN</h5>
+              <StatBar done = {`${elementVisibility}` === 'true' ? '100' : '0'} text='Always trying to improve.'/>
             </article>
 
             <article className="attribute">
-              <h5>PERCEPTION</h5>
-              <StatBar done = {`${elementVisibility}` === 'true' ? '20' : '0'} text='4-Eyes'/>
+              <h5>ADAPTABILITY</h5>
+              <StatBar done = {`${elementVisibility}` === 'true' ? '60' : '0'} text='Longer time needed in newer situations.'/>
             </article>
 
             <article className="attribute">
-              <h5>WISDOM</h5>
-              <StatBar done = {`${elementVisibility}` === 'true' ? '35' : '0'} text='Still much to learn'/>
+              <h5>SELF-SUFFICIENT</h5>
+              <StatBar done = {`${elementVisibility}` === 'true' ? '80' : '0'} text='But open to help from others.'/>
             </article>
 
             <article className="attribute">
-              <h5>WILLPOWER</h5>
-              <StatBar done = {`${elementVisibility}` === 'true' ? '85' : '0'} text='Makes up for the INTELLIGENCE portion'/>
+              <h5>PROGRAMMING</h5>
+              <StatBar done = {`${elementVisibility}` === 'true' ? '65' : '0'} text='In the process of improving.'/>
             </article>
 
             <article className="attribute">
-              <h5>CHARISMA</h5>
-              <StatBar done = {`${elementVisibility}` === 'true' ? '50' : '0'} text='Quick to stutter, stutter too quickly.'/>
+              <h5>COMMUNICATION</h5>
+              <StatBar done = {`${elementVisibility}` === 'true' ? '50' : '0'} text='Try to understand and be understood.'/>
             </article>
 
           </div>
           <p className = {`about_content_p_animation intro ${`${about_me_visible}` === "true" ? " play" : ""}`}>
               Hi there! A bit of introduction here, I am Gregory Wong, an undergraduate currently studying Computer Science
-              in NTU. My interest are games, coding and hanging out with friends.I started coding when I entered Polytechnic 
-              and really liked it during my time there learning Game Development. I learn mostly by doing so I really enjoy 
-              working on and building projects whenever any idea comes into my mind. I'm not the brightest but I definitely 
-              put in effort on what I am doing and consider myself a fairly proactive person when it comes to my own growth.
+              in NTU. I enjoy building projects and spending my free time playing and creating games as well as exploring new
+              aspects of software such as this website. This site not only serves as my platform for experimentation but also
+              as a record for the works that I have taken part in (<em>feel free to browse below</em>). I am constantly looking
+              for ways to grow and consistently aim to improve myself at what I do each day. If you have any question feel free
+              to contact me and we can have a chat.
           </p>
         </div>
       </div>

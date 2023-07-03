@@ -49,8 +49,7 @@
     transition: var(--transition);
 }
 
-.about_me > h3,
-.about_me > h5{
+.about_me > h3{
     position: relative;
     text-align: center;
     background: rgba(0,0,0,0.5);
@@ -58,13 +57,9 @@
     padding: 1rem;
     font-style: italic;
 }
+
 .about_me > h3{
-    top: 6dvh;
-    font-size: 2.5dvw;
-}
-.about_me > h5{
-    bottom: 6dvh;
-    font-size: 1dvw;
+    font-size: 1.5dvw;
 }
 
 .about_me:hover > .about_me-image,
