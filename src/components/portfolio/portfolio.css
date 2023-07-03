@@ -56,6 +56,10 @@
     width: 73dvw;
 }
 
+.portfolio_video-description::-webkit-scrollbar {
+    display: hidden;
+}
+
 .scroll-desp{
     background: var(--color-primary-variant);
     width: 100%;
