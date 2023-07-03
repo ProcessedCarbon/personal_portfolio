@@ -143,7 +143,6 @@
     left: 20rem;
     transition: var(--transition);
     font-size: 0;
-    overflow: hidden;
     font-weight: 100;
 }
 
@@ -152,11 +151,10 @@
     filter: blur(0px);
     left: 0rem;
     font-size: 1vw;
-    overflow: scroll;
 }
-.portfolio_video-description .hidden::-webkit-scrollbar,
-.portfolio_video-description:hover .hidden::-webkit-scrollbar{
-    display: hidden;
+.portfolio_video-description .hidden,
+.portfolio_video-description:hover .hidden{
+    overflow: hidden;
 }
 
 .portfolio_video-description:hover .shown{
