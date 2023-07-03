@@ -32,13 +32,16 @@
 }
 .portfolio_items::-webkit-scrollbar{
     display: visible;
-    height: 8px;
+    height: 1.5dvh;
     background-color: var(--color-bg-variant)
 }
 /* Add a thumb */
 .portfolio_items::-webkit-scrollbar-thumb {
     background:var(--color-primary-variant-light);
     border-radius: 5px;
+}
+.portfolio_items::-webkit-scrollbar-thumb:hover {
+    background:var(--color-light);
 }
 .portfolio_items > .portfolio_item{
     position: relative;

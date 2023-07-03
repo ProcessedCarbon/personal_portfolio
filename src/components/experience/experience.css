@@ -163,9 +163,17 @@
 }
 
 .experience_content-programs::-webkit-scrollbar{
-    display: none;
+    height: 1dvh;
+    background-color: transparent;
 }
-
+/* Add a thumb */
+.experience_content-programs::-webkit-scrollbar-thumb {
+    background:var(--color-primary-variant-light);
+    border-radius: 5px;
+}
+.experience_content-programs::-webkit-scrollbar-thumb:hover {
+    background:var(--color-light);
+}
 .experience_content-programs .experience_details{
     display: flex;
     gap: 1rem;
