@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './experience.css'
 import {BsFileEarmarkCheckFill} from 'react-icons/bs'
 import Skillbar from './Skillbar.jsx'
@@ -16,7 +16,12 @@ const skillBarOptions = {
 const Experience = () => {
 	const {ref: exp_ref, inView: elementVisibility} = useInView(skillBarOptions);
   const {ref: exp_container_ref, inView: containerVisibility} = useInView(observerOptions);
-  
+  const scroller = document.querySelector(".experience_content-coding");
+
+  const handleScroll = (e) => {
+    scroller.scrollTop = 0;
+  };
+
   return (
     <section id='experience'>
       <h5>My Skill-Set</h5>
@@ -33,20 +38,20 @@ const Experience = () => {
             <div className='transition-line'></div>
           </div>
 
-          <div className="experience_content-coding" ref={exp_ref}>
+          <div className="experience_content-coding" ref={exp_ref} onMouseLeave={handleScroll}>
             {/* SHOWN START */}
             <div className="shown">
               {/* REACT */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='Go' skilllevel='Basic' skillvalue={`${elementVisibility}` === 'true' ? '20' : '0'}/>
+                <Skillbar className='skill-bar' skillname='Go' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '50' : '0'}/>
                 <p className='text-light'>
-                  Still currently a beginner.
+                  Able to debug and write basic code to handle server-side.
                 </p>
               </article>
 
               {/* C# */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='C#' skilllevel='Proficient' skillvalue={`${elementVisibility}` === 'true' ? '65' : '0'}/>
+                <Skillbar className='skill-bar' skillname='C#' skilllevel='Proficient' skillvalue={`${elementVisibility}` === 'true' ? '80' : '0'}/>
                 <p className='text-light'>
                   Fair experience as most of my projects below were done using this langauge.
                 </p>
@@ -54,34 +59,40 @@ const Experience = () => {
 
               {/* Java */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='Lua' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '50' : '0'}/>
+                <Skillbar className='skill-bar' skillname='Lua' skilllevel='Proficient' skillvalue={`${elementVisibility}` === 'true' ? '65' : '0'}/>
                 <p className='text-light'>
-                  Did a single project and a few assessments.
+                  Implement client-side features, coding of UI, debugging as well as interfacing with server-side.
                 </p>
               </article>
 
               {/* Python */}
               <article className="experience_details">
-                <Skillbar className='skill-bar' skillname='Python' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '45' : '0'}/>
+                <Skillbar className='skill-bar' skillname='Python' skilllevel='Intermediate' skillvalue={`${elementVisibility}` === 'true' ? '55' : '0'}/>
                 <p className='text-light'>
-                  Fairly confident in this language.
+                  Did some data visualisations, model training and interfacing on RasberryPi in school.
                 </p>
               </article>
             </div>
             {/*SHOWN END */}
             <div className="hidden">
+              <h5>School</h5>
               <p>
-                Most of my experience in coding has been in making games. It was only after I 
-                enrolled in University was I exposed to the various different applications of
-                it. From there I began to do my own research and tried out different applications 
-                (one of it being this website). Though I am still very much inexperienced, I have a
-                strong interest in it would dabble in it during my spare time.
+                Most of my experience has been school projects in polytechnic where I made numerous amounts of
+                games in my time there. The most notable ones(can be seen below) are bigger in scale and took the majority
+                of the school year to complete. These projects required me to work in teams, learn new skills, take a creative
+                approach to problem solving as well as effectively manage my tasks and time.
+              </p>
+              <h5>Internships</h5>
+              <p>
+                I did 2 internships one at <b>Neeuro</b> and <b>UDREAM Entertainment</b>. While I was at Neeuro I was mainly tasked with software
+                testing and prototyping of new ideas. This showed me the gaps in my knowledge and experience, as well as gave me an
+                opportunity to experience first-hand the SDLC and Agile.
               </p>
               <p>
-                I prefer practical over theory most of the time and thus almost always prefer building/
-                making something. However, I do understand that coding is heavily theoritical subject and
-                requires a certain level of understanding about the technicalities and thus, ever so reluctantly
-                do do my readings on certain aspects at times.
+                At <b>UDREAM</b> I was given the opportunity to debug and implement new features for the game. During my time there
+                I became proficient in version control, debugging and feature implementation and integration. I also learnt the
+                effectiveness of code reviews and understood the concept of maximum change of a system through minimum impact on
+                the code base. 
               </p>
             </div>
           </div>

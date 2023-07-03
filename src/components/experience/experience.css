@@ -33,6 +33,9 @@
 .transition-group > h5::after{
     content: ' Summary!';
 }
+.experience_coding{
+    height: 70dvh;
+}
 .experience_coding:hover > .transition-group h5{
     padding-left: 83%;
     align-content: flex-end;
@@ -126,7 +129,7 @@
 }
 
 .experience_coding:hover .hidden{
-    top: -90%;
+    top: -100%;
     opacity: 1;
     filter: blur(0px);
     visibility: visible;
