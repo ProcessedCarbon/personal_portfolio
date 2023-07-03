@@ -56,7 +56,7 @@
     width: 73dvw;
 }
 
-.portfolio_video-description::-webkit-scrollbar {
+.portfolio_video-description > .hidden::-webkit-scrollbar {
     display: hidden;
 }
 
