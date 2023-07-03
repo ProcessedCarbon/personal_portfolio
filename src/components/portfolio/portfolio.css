@@ -152,6 +152,7 @@
     filter: blur(0px);
     left: 0rem;
     font-size: 1vw;
+    overflow: hidden;
 }
 
 .portfolio_video-description:hover .shown{
@@ -163,9 +164,7 @@
 } 
 
 .portfolio_video-description:hover{
-    /* background: rgba(0, 0, 0, 0.3); */
     cursor: default;
-    /* border: 5px solid transparent; */
     transform: scale(1.05);
     border-style: outset;
     box-shadow: none;
