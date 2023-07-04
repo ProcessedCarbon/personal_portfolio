@@ -2,18 +2,17 @@ import React from 'react'
 import './contact.css'
 import {HiOutlineMail} from 'react-icons/hi'
 import {AiOutlineWhatsApp} from 'react-icons/ai'
-import {AiOutlineInstagram} from 'react-icons/ai'
 import {RiTelegramLine} from 'react-icons/ri'
 import {useRef} from 'react'
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_nvlf4wo', 'template_ko7czbg', form.current, 'IebWPk08v9LmIxHxM')
-    e.target.reset();
-  };
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   emailjs.sendForm('service_nvlf4wo', 'template_ko7czbg', form.current, 'IebWPk08v9LmIxHxM')
+  //   e.target.reset();
+  // };
 
   return (
     <section id='contact'>
@@ -31,13 +30,6 @@ const Contact = () => {
          </article>
 
          <article className='contact_option'>
-          <AiOutlineInstagram className='contact_option-icons'/>
-          <h4>Instagram</h4>
-          <h5>@gregory_w0ng</h5>
-          <a href="https://www.instagram.com/gregory_w0ng/" target="_blank" rel="noreferrer">Drop a Follow!</a>
-         </article>
-
-         <article className='contact_option'>
           <AiOutlineWhatsApp className='contact_option-icons'/>
           <h4>Whatsapp</h4>
           <h5>+65 8374 8871</h5>
@@ -52,12 +44,12 @@ const Contact = () => {
          </article>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        {/* <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
-        </form>
+        </form> */}
 
       </div>
     </section>

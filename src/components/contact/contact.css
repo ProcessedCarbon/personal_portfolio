@@ -9,6 +9,7 @@
     grid-auto-flow: column;
     gap: 1.2rem;
     margin-bottom: 1dvh;
+    height: 20dvh;
 }
 
 .contact_option{
@@ -87,14 +88,15 @@
 }
 
 /* ================ FORM =================*/
-form{
+/* form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     place-items: end center;
-}
+    margin-top: 1dvh;
+} */
 
-input, textarea{
+/* input, textarea{
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -109,7 +111,7 @@ input, textarea{
 input:-webkit-autofill{
     -webkit-text-fill-color: var(--color-white) !important;
     -webkit-box-shadow: 0 0 0 40px var(--color-bg) inset !important;
-}
+} */
 
 /* ===================== Media Queries (Medium Devices) ======================== */
 @media screen and (max-width: 1024px) {
