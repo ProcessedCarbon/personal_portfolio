@@ -21,63 +21,8 @@ const Portfolio = () => {
 
       <div className={`container portfolio_container experience_coding_animation intro ${`${sectionVisibility}` === "true" ? " play" : ""}`}>
           <div className="portfolio_items">
-            {/* Item 1 */}
-            <article className='portfolio_item'>
-              <h2>GearWorks</h2>
-              <div className="portfolio_video">
-                <div className='video_wrapper'>
-                  <ReactPlayer
-                    width='100%' 
-                    height="100%" 
-                    controls={true} 
-                    url={GearWorks}
-                  />
-                </div>
-                <div className="portfolio_video-description">
 
-                  <div className="shown">
-                    <div className="description_group">
-                      <i><RiCheckboxMultipleLine/></i>
-                      <div>
-                        <h4>First game made</h4>
-                        <small className='text-light'>Created in 2015.</small>
-                      </div>
-                    </div>
-
-                    <div className='description_group'>
-                      <i><RiCheckboxMultipleLine/></i>
-                      <div>
-                        <h4>Team of 5</h4>
-                        <small className='text-light'>1 Programmers, 1 Designer, 3 Artist.</small>
-                      </div>
-                    </div>
-
-                    <div className='description_group'>
-                      <i><RiCheckboxMultipleLine/></i>
-                      <div>
-                        <h4>First experience in coding</h4>
-                        <small className='text-light'>First time applying coding to making something.</small>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div className="hidden">
-                    <p>
-                      My first ever game made between 2015-2016 as part of a studio project in Polytechnic.
-                      Participated in the project as the main programmer and worked mainly on
-                      most of the systems in the game. A very amateurish project as most of the
-                      code was in a single class which made things like debugging extremely difficult
-                      and tedious. However, a good learning experience overall but 10/10 would not do
-                      it ever again.
-                    </p>
-                  </div>
-                  
-                </div>
-              </div>
-            </article>
-
-            {/* Item 2*/}
+            {/* Item FYP*/}
             <article className='portfolio_item'>
               <h2>DoubleTime</h2>
               <div className="portfolio_video">
@@ -89,29 +34,29 @@ const Portfolio = () => {
                     url={DoubleTime}
                   />
                 </div>
-                <div className="portfolio_video-description">
+              <div className="portfolio_video-description">
                 <div className="shown">
                     <div className="description_group">
                       <i><RiCheckboxMultipleLine/></i>
                       <div>
-                        <h4>Poly Final Year Project</h4>
-                        <small className='text-light'>1 year worth of work.</small>
+                        <h4>Polytechnic Final Year Project</h4>
+                        <small className='text-light'>Full year project</small>
                       </div>
                     </div>
 
                     <div className='description_group'>
                       <i><RiCheckboxMultipleLine/></i>
                       <div>
-                        <h4>Made in Unity</h4>
-                        <small className='text-light'>Used everything I learnt from Year 2 of using Unity.</small>
+                        <h4>Aggregation of Polytechnic experience</h4>
+                        <small className='text-light'>Used everything I learnt so far in Polytechnic.</small>
                       </div>
                     </div>
 
                     <div className='description_group'>
                       <i><RiCheckboxMultipleLine/></i>
                       <div>
-                        <h4>90% of assets done inhouse</h4>
-                        <small className='text-light'>Shaders and camera filters were online assets.</small>
+                        <h4>Larger team</h4>
+                        <small className='text-light'>Designer, 2 Programmers and 5 Artists</small>
                       </div>
                     </div>
 
@@ -119,12 +64,29 @@ const Portfolio = () => {
 
                   <div className="hidden">
                     <p>
-                      My Finaly Year Project for my last year in Polytechnic. Was my first time working in
-                      a larger team of 7 so initially we had alot of complications and communication issues.
-                      We resolved it my setting a multitude of systems to streamline certain processes and make
-                      workflow more fluid. I used everything I learnt from working in Unity in year 2 for this project.
-                      Was mainly responsible for most of the systems alongside another programmer, a few assets like 
-                      the shaders of weapons after they drop and the vignette on the camera were gotten externally.
+                      The Final Year Polytechnic project where I used everything I had learnt thus far to create.
+                      Was the main programmer for the project which lead to a bigger contribution to the code base.
+                    </p>
+                    <p>
+                      Heavily practiced OOP and Agile methodlogies throughout this project.
+                    </p>
+                    <p>
+                      AI was made using a finite-state-machine with Unity NavMesh for pathfinding.
+                    </p>
+                    <p>
+                      Created camera culling of objects obstructing camera when traversing the level.
+                    </p>
+                    <p>
+                      Object pooling was integrated(<em>Enemies, Spawned Items, Bullets</em>) to optimise performance as much as possible.
+                    </p>
+                    <p>
+                      Occlusion culling and baked lighting done for optimization.
+                    </p>
+                    <p>
+                      Worked with artists to tntegrte UI, Animation, SFX, VFX and Models.
+                    </p>
+                    <p>
+                      Maximize reusing of assets while not compromising quality.
                     </p>
                   </div>
 
@@ -132,8 +94,8 @@ const Portfolio = () => {
               </div>
             </article>
 
-            {/* Item 3*/}
-            <article className='portfolio_item'>
+{/* Item TD*/}
+<article className='portfolio_item'>
               <h2>Eternal Night</h2>
               <div className="portfolio_video">
                 <div className='video_wrapper'>
@@ -151,8 +113,8 @@ const Portfolio = () => {
                     <div className='description_group'>
                       <i><RiCheckboxMultipleLine/></i>
                       <div>
-                        <h4>2nd Year final project</h4>
-                        <small className='text-light'>Chance to push myself to learn more about Unity</small>
+                        <h4>2nd Year project</h4>
+                        <small className='text-light'>Done in Unity</small>
                       </div>
                     </div>
 
@@ -160,7 +122,7 @@ const Portfolio = () => {
                     <div className='description_group'>
                       <i><RiCheckboxMultipleLine/></i>
                       <div>
-                        <h4>Team of 5</h4>
+                        <h4>Worked with another programmer</h4>
                         <small className='text-light'>2 Programmers, 1 Designer, 2 Artist</small>
                       </div>
                     </div>
@@ -170,7 +132,7 @@ const Portfolio = () => {
                       <i><RiCheckboxMultipleLine/></i>
                       <div>
                         <h4>Worked mostly on Pathfinding, UI and Camera</h4>
-                        <small className='text-light'>Also did minor things like asset integration</small> 
+                        <small className='text-light'>Coded in C#</small> 
                       </div>
                     </div>
 
@@ -178,17 +140,75 @@ const Portfolio = () => {
 
                   <div className="hidden">
                     <p>
-                      This was an opportunity for me to push myself to learning more subjects that were
-                      outside of the curriculum since most of what was needed was not taught. Learnt quite
-                      alot on this project and I would personally say that this project improved my understanding
-                      of coding/ development the most. I think I grew and learnt alot in both technical and 
-                      soft skills whilst working on this project.
+                      Done in Unity Game Engine and was my first experience working with another programmer. We
+                      split the work based on features and tried our best not to have each other working on
+                      overlapping features. However there were times when it was necessary which communication played
+                      a key role in ensuring a smooth workflow. Practiced OOP and some Agile methodlogies throughout
+                      the project. Pathfinding and UI were done via Unity's inhouse systems (NavMesh & UnityUI), Camera movement 
+                      done by shfting coordinates with no extra camera filters or effects.
                     </p>
                   </div>
 
                 </div>
               </div>
             </article>
+
+            {/* Item Puzzle */}
+            <article className='portfolio_item'>
+              <h2>GearWorks</h2>
+              <div className="portfolio_video">
+                <div className='video_wrapper'>
+                  <ReactPlayer
+                    width='100%' 
+                    height="100%" 
+                    controls={true} 
+                    url={GearWorks}
+                  />
+                </div>
+                <div className="portfolio_video-description">
+
+                  <div className="shown">
+                    <div className="description_group">
+                      <i><RiCheckboxMultipleLine/></i>
+                      <div>
+                        <h4>Polytechnic Yr 1 Project</h4>
+                        <small className='text-light'>Created in 2015.</small>
+                      </div>
+                    </div>
+
+                    <div className='description_group'>
+                      <i><RiCheckboxMultipleLine/></i>
+                      <div>
+                        <h4>Made with 5 people</h4>
+                        <small className='text-light'> Programmer(Me), Designer, 3 Artist.</small>
+                      </div>
+                    </div>
+
+                    <div className='description_group'>
+                      <i><RiCheckboxMultipleLine/></i>
+                      <div>
+                        <h4>Made in Adobe Animate CC</h4>
+                        <small className='text-light'>Coded with ActionScript</small>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div className="hidden">
+                    <p>
+                      My first larger scale studio project in Polytechnic. Participated in the project as the 
+                      programmer. Movement in game is done through changing coordinates and the puzzles are
+                      made through referencing animation states. Setting all the wheels in the correct states
+                      solves the puzzle. Also integrated all the animations, sprites and SFX in game. Learnt alot
+                      about the fundamentals of coding, project management and working in a team. 
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </article>
+
+            
           </div>
         <div className='scroll-desp'>
           <div className="scroll-desp content">

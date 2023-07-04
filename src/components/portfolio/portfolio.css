@@ -116,7 +116,7 @@
     border: 5px solid var(--color-primary-variant);
     border-radius: 1.5rem;
     height: 60dvh;
-    width: 20dvw;
+    width: 22dvw;
     padding: 2rem;
     overflow: auto;
     transition: var(--transition-cubicbezier);
@@ -125,37 +125,41 @@
     box-shadow: inset 4px 4px 6px 5px rgba(0, 0, 0, 0.3),
                 inset -4px -4px 8px 1px rgba(255, 255, 255, 0.2);
 }
-
 .portfolio_video-description .shown{
     display: flex;
     flex-direction: column;
-    row-gap: 0.75rem;
+    justify-content: space-between;
     filter: blur(0px);
     transition: var(--transition);
     padding: 0.5rem;
     position: relative;
-    font-size: 1vw;
 } 
 
 .portfolio_video-description .hidden{
     position: relative;
     visibility: visible;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     filter: blur(3px);
     left: 20rem;
     transition: var(--transition);
     font-size: 0;
     overflow: hidden;
     font-weight: 100;
+    padding-right: 1dvw;
+    row-gap: 1dvh;
+}
+.portfolio_video-description .hidden::-webkit-scrollbar{
+    display: visible;
+    width: 0.25dvw;
 }
 
 .portfolio_video-description:hover .hidden{
     visibility: visible;
     filter: blur(0px);
     left: 0rem;
-    font-size: 1vw;
-    overflow: hidden;
+    font-size: 1dvw;
+    overflow: auto;
 }
 
 .portfolio_video-description:hover .shown{

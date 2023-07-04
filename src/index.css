@@ -48,6 +48,13 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+::-webkit-scrollbar-thumb{
+    background:var(--color-primary-variant-light);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:var(--color-light);
+}
 /* ---------------- Background -------------------- */
 
 .Parallax{
